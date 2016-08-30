@@ -15,6 +15,7 @@ before(function(done) {
   const html = path.resolve(__dirname, '..', 'index.html');
 
   jsdom.env(html, [], {src: babelResult.code}, (err, window) => {
+    console.log('in window function')
     if (err) {
       return done(err);
     }

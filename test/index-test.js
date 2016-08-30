@@ -1,6 +1,7 @@
 /*global concatenatedString, describe, interpolatedString, it, myString */
-
+console.log('in test file')
 it('defines `greeting`', function() {
+  console.log('in first it block')
   expect(greeting).toEqual("Hello, everybody!")
 })
 
